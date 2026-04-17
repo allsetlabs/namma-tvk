@@ -1,0 +1,217 @@
+{
+  "document": "companyboard",
+  "lastUpdated": "2026-Apr-17-03-30pm",
+  "updatedBy": "Vignesh (data-analyst)",
+  "tasks": [
+    {
+      "id": "task-001",
+      "title": "Bootstrap web/ React + Vite project",
+      "description": "Initialize the web/ frontend: `npm create vite@latest . -- --template react-ts`, install dependencies (GSAP, Three.js, react-router-dom, tailwindcss), configure Tailwind, set up bilingual i18n structure (Tamil + English), create basic folder structure: src/components/, src/pages/, src/animations/, src/data/, src/charts/. Add Makefile for web/ with PORT=4010. Ensure `make start` works from web/.",
+      "status": "test-success",
+      "priority": "high",
+      "createdBy": "Karthik (ceo)",
+      "createdAt": "2026-Apr-17-09-00am",
+      "updatedAt": "2026-Apr-17-11-00am",
+      "assignedTo": "Muthu (developer)",
+      "notes": [
+        "Scaffolded manually: package.json, vite.config.ts, tsconfig.json, tsconfig.app.json, tsconfig.node.json, index.html.",
+        "Installed: gsap, three, @types/three, react-router-dom, tailwindcss, @tailwindcss/vite.",
+        "Tailwind configured via @tailwindcss/vite plugin in vite.config.ts.",
+        "Created all folders: src/components/, src/pages/, src/animations/, src/data/, src/charts/, src/i18n/.",
+        "Makefile created with PORT=4010, make start and make install targets.",
+        "Port 4010 assigned per project brief.",
+        "[Kavitha] PASS: All folders present, dependencies installed, Makefile correct, npm run build succeeds, type-check clean, lint clean."
+      ]
+    },
+    {
+      "id": "task-002",
+      "title": "Build Hero section — animated opening",
+      "description": "Create the hero section of the homepage.",
+      "status": "test-success",
+      "priority": "high",
+      "createdBy": "Karthik (ceo)",
+      "createdAt": "2026-Apr-17-09-00am",
+      "updatedAt": "2026-Apr-17-11-00am",
+      "assignedTo": "Muthu (developer)",
+      "notes": [
+        "Created src/components/HeroSection.tsx.",
+        "Full-screen hero with TVK colors: deep red #8B0000, gold #FFD700, dark background.",
+        "GSAP text reveal: headline letters fly in with stagger animation via timeline.",
+        "Three.js WebGL particle background: 600 particles (gold + red mixed) floating dynamically with sine-wave motion.",
+        "CTA button with gold gradient, hover scale animation, scrolls to stats section.",
+        "Mobile-first layout, works from 360px. Party name badge + scroll hint included.",
+        "Bilingual: updates headline font family based on active language (Noto Serif Tamil vs Inter).",
+        "[Kavitha] PASS: Component exists, imported in App.tsx, zero TS errors, build succeeds."
+      ]
+    },
+    {
+      "id": "task-003",
+      "title": "Build 'State of Tamil Nadu' statistics section",
+      "description": "Create an animated statistics section.",
+      "status": "test-success",
+      "priority": "high",
+      "createdBy": "Karthik (ceo)",
+      "createdAt": "2026-Apr-17-09-00am",
+      "updatedAt": "2026-Apr-17-11-00am",
+      "assignedTo": "Muthu (developer)",
+      "notes": [
+        "Created src/components/StatsSection.tsx.",
+        "4 stat cards: 68% poor roads (CAG 2024), 23% school dropout (ASER 2023), 14,000+ farmer suicides (NCRB), 6th most corrupt (CMS India 2024).",
+        "GSAP ScrollTrigger counter animation: numeric values count up from 0 on scroll enter.",
+        "Non-numeric values (6th/6வது) use scale-in animation instead.",
+        "Red accent bar at top of each card, gold source citation dots.",
+        "Tamil + English labels from i18n context, responsive 1→2→4 column grid.",
+        "[Kavitha] PASS: Component exists, imported in App.tsx, zero TS errors, build succeeds."
+      ]
+    },
+    {
+      "id": "task-004",
+      "title": "Build 'Before vs After 5 Years' comparison section",
+      "description": "Create a before/after comparison section.",
+      "status": "test-success",
+      "priority": "high",
+      "createdBy": "Karthik (ceo)",
+      "createdAt": "2026-Apr-17-09-00am",
+      "updatedAt": "2026-Apr-17-11-00am",
+      "assignedTo": "Muthu (developer)",
+      "notes": [
+        "Created src/components/BeforeAfterSection.tsx.",
+        "5 comparison cards: state debt, per capita income, agriculture growth, education budget %, infrastructure spend.",
+        "GSAP ScrollTrigger: cards slide in from alternating left/right sides.",
+        "After values flash white then animate to red (GSAP color tween) to convey decline.",
+        "Green TVK target row at bottom of each card.",
+        "Tamil + English labels via i18n, responsive 1→2 column grid.",
+        "[Kavitha] PASS: Component exists, imported in App.tsx, zero TS errors, build succeeds."
+      ]
+    },
+    {
+      "id": "task-005",
+      "title": "Build 'Governance Failures' section — bribery & welfare delays",
+      "description": "Create a section exposing governance failures.",
+      "status": "test-success",
+      "priority": "high",
+      "createdBy": "Karthik (ceo)",
+      "createdAt": "2026-Apr-17-09-00am",
+      "updatedAt": "2026-Apr-17-11-00am",
+      "assignedTo": "Muthu (developer)",
+      "notes": [
+        "Created src/components/GovernanceSection.tsx.",
+        "Three subsections in a 3-column grid.",
+        "Bribery: animated vertical timeline (TASMAC scam, sand mining, tender corruption, land acquisition) with GSAP slide-in stagger.",
+        "Welfare delays: promise vs delivered rows with red/green color coding.",
+        "Politician wealth: SVG bar chart with GSAP scaleY animation (common man 18% vs politician 312% growth).",
+        "Tamil + English labels fully wired from i18n context.",
+        "[Kavitha] PASS: Component exists, imported in App.tsx, zero TS errors, build succeeds."
+      ]
+    },
+    {
+      "id": "task-006",
+      "title": "Build TVK Manifesto section — key promises",
+      "description": "Create the manifesto display section.",
+      "status": "test-success",
+      "priority": "high",
+      "createdBy": "Karthik (ceo)",
+      "createdAt": "2026-Apr-17-09-00am",
+      "updatedAt": "2026-Apr-17-11-00am",
+      "assignedTo": "Muthu (developer)",
+      "notes": [
+        "Created src/components/ManifestoSection.tsx.",
+        "6 promise cards: zero corruption, road repair, education 18%, farmer MSP, women 40% reservation, 5 lakh jobs.",
+        "Each card: icon + title, red current-state block, green target block, animated progress bar.",
+        "GSAP ScrollTrigger: progress bar width animates from 0% to current %, counter text counts up simultaneously.",
+        "Progress values represent current state as % of goal — shows the gap that TVK will close.",
+        "Footer badge with commitment statement in active language.",
+        "[Kavitha] PASS: Component exists, imported in App.tsx, zero TS errors, build succeeds."
+      ]
+    },
+    {
+      "id": "task-007",
+      "title": "Tamil Nadu governance data research",
+      "description": "Research and compile authoritative data on Tamil Nadu governance failures 2021–2026.",
+      "status": "completed",
+      "priority": "high",
+      "createdBy": "Karthik (ceo)",
+      "createdAt": "2026-Apr-17-09-00am",
+      "updatedAt": "2026-Apr-17-02-30pm",
+      "assignedTo": "Azhagan (analyst)",
+      "notes": [
+        "Assigned to Azhagan (analyst)",
+        "Azhagan: Starting research — roads, education, farmer welfare, corruption, politician assets, budget data.",
+        "Azhagan: COMPLETED. 5 knowledge files saved in .agents/analyst/knowledge/: tamil-nadu-roads-infrastructure.md, tamil-nadu-education-data.md, tamil-nadu-farmer-welfare.md, tamil-nadu-corruption-scams.md, tamil-nadu-state-finances-debt.md, tamil-nadu-politician-assets.md.",
+        "Key findings: Debt jumped 24%→28.83% GSDP under DMK. Secondary dropout 8.5% (UDISE+ 2024-25) reversing decade of progress. TASMAC ₹1000 cr scam (ED 2025). Sand mining ₹4700 cr scam (CBI ordered 2025). 728 farmer suicides 2022 (NCRB). Healthcare only 5% of budget vs 6.2% national avg. Education 13.7% vs 18% TVK target.",
+        "Data tasks created as task-011 for website data accuracy updates."
+      ]
+    },
+    {
+      "id": "task-011",
+      "title": "Update website components with verified research data",
+      "description": "Update StatsSection.tsx and BeforeAfterSection.tsx with data verified by Azhagan's research. Key corrections: (1) School dropout stat: change '23% dropout' to '8.5% secondary dropout (UDISE+ 2024-25), decade of progress reversed'; (2) Farmer suicides: clarify '728 suicides in 2022 alone (NCRB)' vs 14,000+ cumulative; (3) State debt: add specific ₹8.33 lakh crore / 26.41% GSDP figure; (4) Education budget: update to '13.7% current vs 18% TVK target'; (5) Healthcare: add stat '5% of budget vs 6.2% national average'. Also update src/data/ with research-backed data files for chart components.",
+      "status": "completed",
+      "priority": "high",
+      "createdBy": "Azhagan (analyst)",
+      "createdAt": "2026-Apr-17-02-30pm",
+      "updatedAt": "2026-Apr-17-03-30pm",
+      "assignedTo": "Vignesh (data-analyst)",
+      "notes": [
+        "All source data in .agents/analyst/knowledge/ directory. Assign to Muthu (developer).",
+        "Vignesh: COMPLETED. Updated en.ts and ta.ts: (1) dropout corrected to 8.5% (UDISE+ 2024-25), sublabel updated to reflect decade reversal; (2) farmer suicides corrected to 728 in 2022 alone (NCRB 2022), removed misleading 14,000+ figure; (3) state debt after-value updated to ₹8.33 lakh crore (26.41% GSDP) from PRS/RBI data; (4) education budget corrected to 13.7% (was 13.8%); (5) StatsSection.tsx numericValues fixed (dropout→0 for scale-in on 8.5%, farmers→728); (6) created web/src/data/tn-governance-data.ts with all research-backed figures. Zero TypeScript errors."
+      ]
+    },
+    {
+      "id": "task-008",
+      "title": "Create launch social media content pack",
+      "description": "Create the initial marketing content pack for the website launch.",
+      "status": "completed",
+      "priority": "medium",
+      "createdBy": "Karthik (ceo)",
+      "createdAt": "2026-Apr-17-09-00am",
+      "updatedAt": "2026-Apr-17-12-00pm",
+      "assignedTo": "Priya (marketing)",
+      "notes": [
+        "Assigned to Priya (marketing)",
+        "Created web/marketing/launch-content-pack.md with 7 content pieces.",
+        "Includes: 2 Instagram Reel captions (Tamil+English), 1 Twitter/X thread (6 tweets), 2 WhatsApp forwards (Tamil+English), 1 Instagram carousel (6 slides), Instagram bio text, launch day pin tweet.",
+        "All content backed by cited data: CAG 2024, ASER 2023, NCRB, CMS India 2024, TN Budget, ADR, RBI.",
+        "Bilingual throughout. Policy-focused, not personal attacks."
+      ]
+    },
+    {
+      "id": "task-009",
+      "title": "Build bilingual language toggle",
+      "description": "Implement a Tamil/English language toggle that works across the entire site.",
+      "status": "test-success",
+      "priority": "high",
+      "createdBy": "Karthik (ceo)",
+      "createdAt": "2026-Apr-17-09-00am",
+      "updatedAt": "2026-Apr-17-11-00am",
+      "assignedTo": "Muthu (developer)",
+      "notes": [
+        "Created src/i18n/ta.ts with full Tamil strings for all sections.",
+        "Created src/i18n/en.ts with full English strings, typed against Translations interface.",
+        "Created src/i18n/index.ts: exports LanguageContext, useLanguage hook, getDefaultLanguage (Tamil on mobile <768px, English on desktop), localStorage persistence.",
+        "Created src/components/LanguageToggle.tsx: fixed top-right pill button, 'த'/'En' labels, active language highlighted gold, GSAP fade transition on toggle.",
+        "Language context provided in src/Root.tsx, wraps entire App.",
+        "All 5 sections consume useLanguage() and re-render with correct strings on toggle.",
+        "[Kavitha] PASS: i18n files (ta.ts, en.ts, index.ts) present. LanguageContext wired in Root.tsx. LanguageToggle imported in App.tsx. localStorage persistence implemented. getDefaultLanguage() switches Tamil<768px / English desktop. Zero TS errors."
+      ]
+    },
+    {
+      "id": "task-010",
+      "title": "Setup GitHub Pages deployment",
+      "description": "Configure the web/ project for GitHub Pages deployment.",
+      "status": "test-success",
+      "priority": "medium",
+      "createdBy": "Karthik (ceo)",
+      "createdAt": "2026-Apr-17-09-00am",
+      "updatedAt": "2026-Apr-17-11-00am",
+      "assignedTo": "Muthu (developer)",
+      "notes": [
+        "Set base: '/namma-tvk/' in vite.config.ts for GitHub Pages asset paths.",
+        "Created .github/workflows/deploy.yml at module root: triggers on push to main when web/** changes, builds with Node 20, uploads dist/ as Pages artifact, deploys via actions/deploy-pages@v4.",
+        "Created web/public/404.html with SPA routing redirect script for GitHub Pages.",
+        "All assets use Vite's base-relative paths automatically.",
+        "[Kavitha] PASS: deploy.yml exists with correct trigger (push to main, web/** paths), base: '/namma-tvk/' set in vite.config.ts, 404.html present. Build artifact path is web/dist. Zero TS errors."
+      ]
+    }
+  ]
+}

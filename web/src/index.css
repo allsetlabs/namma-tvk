@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --tvk-red: #8B0000;
+    --tvk-gold: #FFD700;
+    --tvk-dark: #0a0a0a;
+    --tvk-surface: #111111;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: var(--tvk-dark);
+    color: #ffffff;
+    font-family: 'Inter', 'Noto Sans Tamil', sans-serif;
+    overflow-x: hidden;
+  }
+
+  .font-tamil {
+    font-family: 'Noto Serif Tamil', 'Noto Sans Tamil', serif;
+  }
+
+  .font-en {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-tvk-red { color: var(--tvk-red); }
+  .text-tvk-gold { color: var(--tvk-gold); }
+  .bg-tvk-red { background-color: var(--tvk-red); }
+  .bg-tvk-gold { background-color: var(--tvk-gold); }
+  .bg-tvk-dark { background-color: var(--tvk-dark); }
+  .bg-tvk-surface { background-color: var(--tvk-surface); }
+  .border-tvk-red { border-color: var(--tvk-red); }
+  .border-tvk-gold { border-color: var(--tvk-gold); }
+
+  .gradient-red-gold {
+    background: linear-gradient(135deg, var(--tvk-red) 0%, #6B0000 50%, #3a0000 100%);
+  }
+
+  .glow-red {
+    box-shadow: 0 0 30px rgba(139, 0, 0, 0.5), 0 0 60px rgba(139, 0, 0, 0.2);
+  }
+
+  .glow-gold {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+  }
+
+  .section-padding {
+    padding: 80px 20px;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding: 100px 40px;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/root.tsx","./src/main.tsx","./src/components/beforeaftersection.tsx","./src/components/governancesection.tsx","./src/components/herosection.tsx","./src/components/languagetoggle.tsx","./src/components/manifestosection.tsx","./src/components/statssection.tsx","./src/i18n/en.ts","./src/i18n/index.ts","./src/i18n/ta.ts"],"version":"5.9.3"}
