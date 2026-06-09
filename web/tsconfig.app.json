@@ -17,7 +17,7 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": ".",
     "paths": {
-      "@allsetlabs/reusable/*": ["../../forge/src/*"]
+      "@allsetlabs/reusable/*": ["../../../forge/src/*"]
     }
   },
   "include": ["src"]
