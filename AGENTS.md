@@ -1,14 +1,14 @@
 # Namma TVK
 
-## Goal
+## Purpose
 
 Bilingual (Tamil/English) political manifesto website for TVK presenting data-backed governance analysis and TVK's vision for Tamil Nadu.
 
-## Description
+## Mental Model
 
 A highly animated, mobile-first website targeting Tamil Nadu citizens. Presents TVK's manifesto with deep statistical analysis — current state metrics, before/after comparisons of the current government's term, visual graphs showing decline in key areas, and how TVK's manifesto would improve things. Covers governance failures (bribery, delayed welfare, poor roads, underfunded public schools, politician wealth vs common man) by DMK, ADMK, BJP, and Congress. Deployed as GitHub Pages from the main branch (AllSetLabs org).
 
-## Architecture
+## Where Things Go
 
 ```
 namma-tvk/
@@ -21,9 +21,21 @@ namma-tvk/
 
 Stack: React + Vite + TypeScript, GSAP (ScrollTrigger), Three.js, react-i18next, `@allsetlabs/reusable` from `../../forge`.
 
-## Progress
+## Development Commands
+
+- `make setup` — check system dependencies
+- `make install` — install web dependencies
+- `make start` — start the web app
+- `npm run type-check` from `web/` — verify TypeScript
+- `npm run build` from `web/` — build the Vite app
+
+## Current Capabilities
 
 Agent-managed project. Web frontend is in active development driven by the board task system.
+
+## Testing Expectations
+
+Run `npm run type-check` and `npm run build` from `web/` after code changes. Use the super repo root `npm run lint` for centralized lint/format checks. For visual/animation changes, inspect mobile and desktop, test language switching where relevant, and check the browser console.
 
 ## Agent-Managed Project
 
