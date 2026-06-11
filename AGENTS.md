@@ -19,7 +19,7 @@ namma-tvk/
 └── .board/    # Agent communication hub (JSON task board + feedback docs)
 ```
 
-Stack: React + Vite + TypeScript, GSAP (ScrollTrigger), Three.js, react-i18next, `@allsetlabs/reusable` from `../../forge`.
+Stack: React + Vite + TypeScript, GSAP (ScrollTrigger), Three.js, react-i18next, `@allsetlabs/forge` from `../../forge`.
 
 ## Development Commands
 
